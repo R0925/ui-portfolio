@@ -4,6 +4,7 @@ import GroupButton from "@/components/GroupButton";
 import Image from "next/image";
 import { useState } from "react";
 import Box from "@/components/Box";
+import ServicesSlider from "@/components/ServicesSlider";
 
 export default function Home() {
   const [isWomanHover, seteIsWomanHover] = useState(false);
@@ -135,7 +136,9 @@ export default function Home() {
           </div>
         </section>
       </section>
-      <section className=" relative h-[1000px] bg-pattern rounded-[50px] py-20 text-white">
+
+      <section className=" relative h-[]  rounded-[50px] py-20 text-white">
+
         <div className="w-[1244px] m-auto ">
           <div className="flex justify-between">
             <h1 className="text-6xl font-semibold ">
@@ -146,8 +149,20 @@ export default function Home() {
               lacus nunc, posuere in justo vulputate, bibendum sodales
             </p>
           </div>
-          <Box />
+          <Image src="/images/bg.jfif" className="absolute top-0  left-0 right-0 bottom-0 w-full h-full rounded-[50px]" alt="" width={0} height={0} sizes="100vw" />
+          <div className="w-full h-full absolute top-0  left-0 right-0 bottom-0 bg-[#0000007a] rounded-[50px] "></div>
+
+
+          <Image src="/images/small-element.png" className="absolute top-0  left-[30%] z-[1] animate-smallElement" alt="" width={300} height={300} />
+          <Image src="/images/big-element.png" className="absolute top-0 right-0 z-[1] animate-bigElement" alt="" width={600} height={600} />
+          <Image src="/images/big-element.png" className="absolute top-[200px] left-0 z-[1] rotate-180 animate-mediumElement" alt="" width={400} height={400} />
+
+          <ServicesSlider />
         </div>
+      </section>
+
+      <section className="w-[1244px] m-auto pt-32">
+        <h2 className="text-6xl font-bold text-center"> My <span className="text-yellow-600">Work Experince</span></h2>
       </section>
     </main>
   );
