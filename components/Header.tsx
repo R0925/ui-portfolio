@@ -14,7 +14,7 @@ const Header = () => {
             <li key={item.url} className="flex-none w-32 text-center mx-1 ">
               <a
                 className={`${
-                  pathname === item.url && "bg-yellow-600"
+                  pathname === item.url && "bg-yellow-600 hover:bg-yellow-600"
                 } inline-block py-5 px-10  hover:bg-gray-700 rounded-full transition-colors w-full`}
                 href={item.url}
               >
