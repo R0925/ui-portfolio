@@ -78,8 +78,8 @@ const Box = (props: BoxProps) => {
   }
   if (type === "post") {
     return (
-      <div className='group relative z-30 w-[300px] '>
-        <div className='relative box2 h-[350px] w-full z-10 peer'>
+      <div className='group relative z-30 w-[350px] '>
+        <div className='relative box2 h-[400px] w-full z-10 peer'>
           <Image
             src={image}
             alt=''
@@ -112,7 +112,7 @@ const Box = (props: BoxProps) => {
               <span className='text-black text-lg inline-block'>{date}</span>
             </li>
           </div>
-          <p className='text-xl text-black mt-5'>{description}</p>
+          <p className='text-2xl font-semibold text-black mt-5'>{description}</p>
         </div>
       </div>
     );

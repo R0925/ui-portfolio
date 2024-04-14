@@ -186,3 +186,77 @@ export const testimonials = [
       "consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.",
   },
 ];
+
+export const skills = [
+  {
+    name: "UX Design",
+  },
+  {
+    name: "App Design",
+  },
+  {
+    name: "Dashboard",
+  },
+  {
+    name: "Wireframe",
+  },
+  {
+    name: "User Research",
+  },
+  {
+    name: "UX Design",
+  },
+  {
+    name: "App Design",
+  },
+];
+export const posts = [
+  {
+    id:'0',
+    image:'/images/post.jfif',
+    tag: "UI/ UX Design",
+    author: "Jayesh Patil",
+    date: "10 Nov, 2023",
+    description: "Design Unraveled: Behind the Scenes of UI/UX Magic",
+  },
+  {
+    id:'1',
+    image:'/images/post.jfif',
+    tag: "UI/ UX Design",
+    author: "Jayesh Patil",
+    date: "10 Nov, 2023",
+    description: "Design Unraveled: Behind the Scenes of UI/UX Magic",
+  },
+  {
+    id:'2',
+    image:'/images/post.jfif',
+    tag: "UI/ UX Design",
+    author: "Jayesh Patil",
+    date: "10 Nov, 2023",
+    description: "Design Unraveled: Behind the Scenes of UI/UX Magic",
+  },
+ 
+];
+
+export const footer=[
+  {
+    id:'0',
+    title:"Home",
+  },
+  {
+    id:'1',
+    title:"About Us",
+  },
+  {
+    id:'2',
+    title:"Service",
+  },
+  {
+    id:'3',
+    title:"Resume",
+  },
+  {
+    id:'4',
+    title:"Project",
+  },
+]

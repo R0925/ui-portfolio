@@ -4,7 +4,14 @@ import GroupButton from "@/components/GroupButton";
 import Image from "next/image";
 import { useState } from "react";
 import Box from "@/components/Box";
-import { workExperince, services, portfolios, testimonials } from "@/constants";
+import {
+  workExperince,
+  services,
+  portfolios,
+  testimonials,
+  skills,
+  posts,
+} from "@/constants";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,6 +19,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [isWomanHover, seteIsWomanHover] = useState(false);
@@ -304,6 +312,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className=" portolio w-[1244px] m-auto py-20">
         <div className="flex justify-between items-center">
           <h2 className="text-6xl font-bold">
@@ -337,6 +346,7 @@ export default function Home() {
           ))}
         </Swiper>
       </section>
+
       <section className="relative">
         <Image
           src="/images/bg.jfif"
@@ -429,25 +439,133 @@ export default function Home() {
           </Swiper>
         </div>
       </section>
+
       <section>
         <h2 className="text-6xl font-bold text-center mt-[80px]">
           Have an Awsome Project <br /> Idea?{" "}
           <span className="text-yellow-600">Let’s Discuss</span>
         </h2>
-        <div className="flex justify-between items-center gap-3 border border-gray-300 rounded-full w-[500px] h-[60px] m-auto mt-10 p-2 ">
-          <div className="bg-orange-200 py-3 px-4 rounded-full flex items-center justify-center">
-            <Image
-              src="/images/sms.svg"
-              className=""
-              alt=""
-              width={40}
-              height={40}
-            />
+        <div className="w-[700px] m-auto mt-10">
+          <div className="flex justify-between items-center gap-3 border border-gray-300 rounded-full w-full h-[60px]  p-2 ">
+            <div className="bg-orange-200 py-2 px-3 rounded-full flex items-center justify-center">
+              <Image
+                src="/images/sms.svg"
+                className=""
+                alt=""
+                width={40}
+                height={40}
+              />
+            </div>
+            <input type="text" className="outline-none w-full" />
+            <button className=" py-3 px-5 bg-yellow-600 text-white rounded-full">
+              Send
+            </button>
           </div>
-          <input type="text" className="outline-none w-full" />
-          <button className=" py-3 px-5 bg-yellow-600 text-white rounded-full">Send</button>
+          <div className="flex justify-between mt-3">
+            <div className="flex items-center gap-1">
+              <Image
+                src="/images/star-3.svg"
+                className=""
+                alt=""
+                width={25}
+                height={25}
+              />
+              <span className="font-semibold text-sm">
+                4.9/5 Average Ratings
+              </span>
+            </div>
+            <div className="flex items-center gap-1">
+              <Image
+                src="/images/award.svg"
+                className=""
+                alt=""
+                width={25}
+                height={25}
+              />
+              <span className="font-semibold text-sm">
+                4.9/5 Average Ratings
+              </span>
+            </div>
+            <div className="flex items-center gap-1">
+              <Image
+                src="/images/shield-tick.svg"
+                className=""
+                alt=""
+                width={25}
+                height={25}
+              />
+              <span className="font-semibold text-sm">
+                4.9/5 Average Ratings
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-orange-500 mt-16 h-[165px] flex items-center rounded-tl-3xl rounded-br-3xl">
+          <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%) -rotate-3 bg-white py-2 ">
+            <ul className="flex items-center justify-between [&_li]:w-[300px] animate-infinite-scroll">
+              {skills.map((item) => (
+                <li className="flex justify-around items-center">
+                  <Image
+                    src="/images/star-4.svg"
+                    className="inline-block"
+                    alt=""
+                    width={50}
+                    height={50}
+                  />
+                  <h3 className="text-4xl font-semibold">{item.name}</h3>
+                </li>
+              ))}
+            </ul>
+            <ul
+              className="flex items-center justify-between [&_li]:w-[300px] animate-infinite-scroll"
+              aria-hidden="true"
+            >
+              {skills.map((item) => (
+                <li className="flex justify-around items-center">
+                  <Image
+                    src="/images/star-4.svg"
+                    className="inline-block"
+                    alt=""
+                    width={50}
+                    height={50}
+                  />
+                  <h3 className="text-4xl font-semibold">{item.name}</h3>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
+
+      <section className="w-[1244px] m-auto mt-20 mb-10">
+        <div className="flex justify-between items-center">
+          <h2 className="text-6xl font-bold">
+            From my <br /> blog post
+          </h2>
+          <a
+            className=" inline-block py-2 px-5 bg-yellow-600 text-white rounded-full"
+            href=""
+          >
+            See All
+          </a>
+        </div>
+        <div className="flex justify-between mt-20">
+          {posts.map((post) => (
+            <Box
+              key={post.id}
+              image={post.image}
+              type="post"
+              authur={post.author}
+              category={post.tag}
+              date={post.date}
+              description={post.description}
+            />
+          ))}
+        </div>
+      </section>
+
+      <Footer />
     </main>
   );
 }
