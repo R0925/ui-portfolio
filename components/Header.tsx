@@ -8,14 +8,14 @@ const Header = () => {
 
   return (
     <nav className="mt-8">
-      <ul className="flex  m-auto bg-gray-800 text-white rounded-full p-2">
+      <ul className="flex  m-auto bg-black  text-white rounded-full p-2">
         {navigationLinks.map((item) =>
           item.type == "link" ? (
             <li key={item.url} className="flex-none w-32 text-center mx-1 ">
               <a
                 className={`${
-                  pathname === item.url && "bg-yellow-600 hover:bg-yellow-600"
-                } inline-block py-5 px-10  hover:bg-gray-700 rounded-full transition-colors w-full`}
+                  pathname === item.url && "bg-secondary hover:bg-secondary"
+                } inline-block py-5 px-10  hover:bg-[#ffffff1a] rounded-full transition-colors w-full`}
                 href={item.url}
               >
                 {item.label}

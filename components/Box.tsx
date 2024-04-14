@@ -16,9 +16,9 @@ const Box = (props: BoxProps) => {
   if (type === "service") {
     return (
       <div className='group z-30'>
-        <div className='relative box2 w-full h-[500px] z-10 backdrop-blur-md bg-[#dddddd1c] transition-all duration-300 group-hover:bg-yellow-600  peer'>
-          <div className='border-2 border-b-0 h-64 w-full rounded-t-[37px] border-gray-400'>
-            <h2 className='text-4xl pt-12 pb-8 pl-10 border-b border-gray-400'>
+        <div className='relative box2 w-full h-[500px] z-10 backdrop-blur-md bg-[#dddddd1c] transition-all duration-300 group-hover:bg-secondary  peer'>
+          <div className='border-2 border-b-0 h-64 w-full rounded-t-[37px] border-[#ffffff56]'>
+            <h2 className='text-4xl pt-12 pb-8 pl-10 border-b border-[#ffffff56]'>
               {title}
             </h2>
           </div>
@@ -31,7 +31,7 @@ const Box = (props: BoxProps) => {
             className='w-full h-full object-contain mt-[-170px] transition-all duration-300 group-hover:scale-110 '
           />
         </div>
-        <button className='absolute bottom-0 right-[-10px] text-4xl z-40 bg-[#1D2939] p-5 rounded-full transition-all duration-300 group-hover:bg-yellow-600'>
+        <button className='absolute bottom-0 right-[-10px] text-4xl z-40 bg-[#1D2939] p-5 rounded-full transition-all duration-300 group-hover:bg-secondary'>
           <Image
             className=''
             src='/images/up-right-arrow.svg'
@@ -64,7 +64,7 @@ const Box = (props: BoxProps) => {
           sizes='100vw'
           className='absolute top-0 w-full h-full object-cover rounded-2xl -z-10'
         />
-        <button className='absolute top-[20px] right-[20px] z-40 border-2 border-yellow-600  p-5 rounded-full transition-all duration-300 group-hover:bg-yellow-600'>
+        <button className='absolute top-[20px] right-[20px] z-40 border-2 border-secondary  p-5 rounded-full transition-all duration-300 group-hover:bg-secondary'>
           <Image
             className=''
             src='/images/light.svg'
@@ -89,7 +89,7 @@ const Box = (props: BoxProps) => {
             className='w-full h-full object-cover '
           />
         </div>
-        <button className='absolute mt-[-85px] right-[-4px] text-4xl z-40 bg-[#1D2939] p-5 rounded-full transition-all duration-300 group-hover:bg-yellow-600'>
+        <button className='absolute mt-[-85px] right-[-4px] text-4xl z-40 bg-[#1D2939] p-5 rounded-full transition-all duration-300 group-hover:bg-secondary'>
           <Image
             className=''
             src='/images/up-right-arrow.svg'
@@ -99,20 +99,20 @@ const Box = (props: BoxProps) => {
           />
         </button>
         <div>
-          <span className='text-xl text-black bg-gray-300 px-8 py-3 rounded-full inline-block mt-5'>
+          <span className='text-xl text-primary bg-gray-300 px-8 py-3 rounded-full inline-block mt-5'>
             {category}
           </span>
           <div className='flex gap-5 mt-5 text-xl font-light'>
             <li className=' text-red-600'>
-              {" "}
-              <span className='text-black text-lg inline-block'>{authur}</span>
+              
+              <span className='text-primary text-lg inline-block'>{authur}</span>
             </li>
             <li className=' text-red-600'>
-              {" "}
-              <span className='text-black text-lg inline-block'>{date}</span>
+              
+              <span className='text-primary text-lg inline-block'>{date}</span>
             </li>
           </div>
-          <p className='text-2xl font-semibold text-black mt-5'>{description}</p>
+          <p className='text-2xl font-semibold text-primary mt-5'>{description}</p>
         </div>
       </div>
     );

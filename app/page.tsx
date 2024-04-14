@@ -39,7 +39,7 @@ export default function Home() {
   };
 
   return (
-    <main>
+    <main className="text-primary">
       <section className="w-[1244px] m-auto  px-5">
         <Header />
 
@@ -59,8 +59,8 @@ export default function Home() {
                 height={30}
               />
             </div>
-            <h1 className="relative text-8xl font-semibold max-w-[800px] m-auto text-center">
-              I’m <span className="text-yellow-600">Jenny</span>,<br />
+            <h1 className="relative text-8xl font-semibold max-w-[800px] m-auto text-center text-black">
+              I’m <span className="text-secondary">Jenny</span>,<br />
               Product Designer
               <Image
                 className="absolute bottom-[-60px] left-[-35px]"
@@ -79,7 +79,7 @@ export default function Home() {
           >
             <div>
               <Image src="/images/quote-up.svg" alt="" width={40} height={40} />
-              <p className="font-semibold text-lg mt-5">
+              <p className="font-semibold text-lg mt-5 ">
                 Jenny’s Exceptional product design <br /> ensure our website’s
                 success. <br /> Highly Recommended
               </p>
@@ -122,7 +122,7 @@ export default function Home() {
                   height={30}
                 />
               </div>
-              <div className=" flex flex-col items-end mt-3">
+              <div className=" flex flex-col items-end mt-3 text-black">
                 <h3 className="text-5xl font-semibold"> 10 Years</h3>
                 <p className="text-lg font-semibold">Experince</p>
               </div>
@@ -155,7 +155,7 @@ export default function Home() {
         <div className="w-[1244px] m-auto ">
           <div className="flex justify-between">
             <h1 className="text-6xl font-semibold z-10">
-              My <span className="text-yellow-600">Services</span>
+              My <span className="text-secondary">Services</span>
             </h1>
             <p className="w-1/3 z-10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -171,7 +171,7 @@ export default function Home() {
               height={0}
               sizes="100vw"
             />
-            <div className="w-full h-full absolute top-0  left-0 right-0 bottom-0 bg-[#0000007a] rounded-[50px] "></div>
+            <div className="w-full h-full absolute top-0  left-0 right-0 bottom-0 bg-[#0000009d] rounded-[50px] "></div>
 
             <Image
               src="/images/small-element.png"
@@ -219,14 +219,14 @@ export default function Home() {
 
       <section className="w-[1244px] m-auto pt-32">
         <h2 className="text-6xl font-bold text-center">
-          My <span className="text-yellow-600">Work Experince</span>
+          My <span className="text-secondary">Work Experince</span>
         </h2>
-        <div className="mt-20 w-[1244px] m-auto">
+        <div className="mt-20 w-[1244px] m-auto ">
           {workExperince.map((item, index) => (
             <div className="flex justify-between min-h-[180px]" key={item.id}>
               <div className="flex-1">
                 <h2 className=" text-3xl font-semibold">{item.title}</h2>
-                <p className=" text-[15px] text-gray-400 mt-2">{item.date}</p>
+                <p className=" text-[15px] text-[#98A2B3] mt-2">{item.date}</p>
               </div>
               <div className="flex-1 flex justify-start items-center gap-1 flex-col">
                 {index % 2 ? (
@@ -258,7 +258,7 @@ export default function Home() {
               </div>
               <div className="flex-1">
                 <h2 className=" text-3xl font-semibold">{item.role}</h2>
-                <p className=" text-sm text-gray-400 mt-2">
+                <p className=" text-sm text-[#98A2B3] mt-2">
                   {item.description}
                 </p>
               </div>
@@ -287,9 +287,9 @@ export default function Home() {
           </div>
           <div className="flex flex-col justify-center gap-10">
             <h2 className="text-6xl font-bold">
-              Why <span className="text-yellow-600">Hire me</span>?
+              Why <span className="text-secondary">Hire me</span>?
             </h2>
-            <p className="text-[15px] text-gray-400 mt-2">
+            <p className="text-[15px] text-[#98A2B3] mt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               <br />
               lacus nunc, posuere in justo vulputate, bibendum sodales
@@ -297,15 +297,15 @@ export default function Home() {
             <div className="flex justify-between">
               <div>
                 <p className="text-3xl font-semibold"> 450+</p>
-                <p className=" text-gray-400">Project Completed</p>
+                <p className=" text-[#98A2B3]">Project Completed</p>
               </div>
               <div>
                 <p className="text-3xl font-semibold"> 450+</p>
-                <p className=" text-gray-400">Project Completed</p>
+                <p className=" text-[#98A2B3]">Project Completed</p>
               </div>
             </div>
             <div>
-              <button className="font-semibold text-3xl px-8 py-6 border border-black rounded-3xl transition-colors duration-300 hover:text-white hover:bg-black">
+              <button className="font-semibold text-3xl px-8 py-6 border border-black rounded-3xl transition-colors duration-300 hover:text-white hover:bg-[#151515]">
                 Hire me
               </button>
             </div>
@@ -317,10 +317,10 @@ export default function Home() {
         <div className="flex justify-between items-center">
           <h2 className="text-6xl font-bold">
             Lets have a look at <br /> my
-            <span className=" text-yellow-600"> Portfolio</span>
+            <span className=" text-secondary"> Portfolio</span>
           </h2>
           <a
-            className=" inline-block py-2 px-5 bg-yellow-600 text-white rounded-full"
+            className=" inline-block py-2 px-5 bg-secondary text-white rounded-full"
             href=""
           >
             See All
@@ -356,11 +356,11 @@ export default function Home() {
           height={0}
           sizes="100vw"
         />
-        <div className="w-full h-full absolute top-0  left-0 right-0 bottom-0 bg-[#0000007a] rounded-[50px] -z-10"></div>
+        <div className="w-full h-full absolute top-0  left-0 right-0 bottom-0 bg-[#0000009d] rounded-[50px] -z-10"></div>
         <div className=" z-40 pt-36">
           <h2 className="text-6xl font-semibold text-white text-center">
             Testimonials That <br />
-            Speak to <span className="text-yellow-600">My Results</span>
+            Speak to <span className="text-secondary">My Results</span>
           </h2>
           <div className="relative w-1/2 m-auto mt-6">
             <p className="text-white text-lg text-center ">
@@ -413,7 +413,7 @@ export default function Home() {
                     />
                     <div>
                       <h5 className="text-xl font-bold ">{testimonial.name}</h5>
-                      <span className=" text-gray-400">
+                      <span className=" text-[#98A2B3]">
                         {testimonial.role} , {testimonial.company}
                       </span>
                     </div>
@@ -443,11 +443,11 @@ export default function Home() {
       <section>
         <h2 className="text-6xl font-bold text-center mt-[80px]">
           Have an Awsome Project <br /> Idea?{" "}
-          <span className="text-yellow-600">Let’s Discuss</span>
+          <span className="text-secondary">Let’s Discuss</span>
         </h2>
         <div className="w-[700px] m-auto mt-10">
           <div className="flex justify-between items-center gap-3 border border-gray-300 rounded-full w-full h-[60px]  p-2 ">
-            <div className="bg-orange-200 py-2 px-3 rounded-full flex items-center justify-center">
+            <div className="bg-[#FFEAD5] py-2 px-3 rounded-full flex items-center justify-center">
               <Image
                 src="/images/sms.svg"
                 className=""
@@ -457,7 +457,7 @@ export default function Home() {
               />
             </div>
             <input type="text" className="outline-none w-full" />
-            <button className=" py-3 px-5 bg-yellow-600 text-white rounded-full">
+            <button className=" py-3 px-5 bg-secondary text-white rounded-full">
               Send
             </button>
           </div>
@@ -501,7 +501,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-orange-500 mt-16 h-[165px] flex items-center rounded-tl-3xl rounded-br-3xl">
+        <div className="bg-[#FB6514] mt-16 h-[165px] flex items-center rounded-tl-3xl rounded-br-3xl">
           <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%) -rotate-3 bg-white py-2 ">
             <ul className="flex items-center justify-between [&_li]:w-[300px] animate-infinite-scroll">
               {skills.map((item) => (
@@ -544,7 +544,7 @@ export default function Home() {
             From my <br /> blog post
           </h2>
           <a
-            className=" inline-block py-2 px-5 bg-yellow-600 text-white rounded-full"
+            className=" inline-block py-2 px-5 bg-secondary text-white rounded-full"
             href=""
           >
             See All

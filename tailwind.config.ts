@@ -16,7 +16,7 @@ const config: Config = {
         smallElement: "smallElement 7s ease-in-out infinite ",
         mediumElement: "mediumElement 15s ease-in-out infinite ",
         bigElement: "bigElement 10s ease-in-out infinite ",
-        'infinite-scroll': 'infinite-scroll 10s linear infinite',
+        "infinite-scroll": "infinite-scroll 10s linear infinite",
       },
       keyframes: {
         smallElement: {
@@ -38,6 +38,12 @@ const config: Config = {
           from: { transform: "translateX(0) " },
           to: { transform: "translateX(-100%)  " },
         },
+      },
+      colors: {
+        white: "#F9FAFB",
+        black: "#171717",
+        secondary: "#FD853A",
+        primary: "#344054",
       },
     },
   },

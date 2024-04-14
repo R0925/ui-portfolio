@@ -12,11 +12,11 @@ const GroupButton = () => {
   }
 
   return (
-    <div className="w-[350px] h-[80px] backdrop-blur-sm shadow-[-1px_1px_5px_2px_#EDF2F7] rounded-full mb-10 p-2 flex justify-between z-20">
+    <div className="w-[350px] h-[80px] backdrop-blur-lg border-2 border-[#ffffff56] rounded-full mb-10 p-2 flex justify-between z-20">
       <a
         href=""
         className={`${
-          isHover ? "ml-[30px]" : "bg-yellow-600 px-8 "
+          isHover ? "ml-[30px]" : "bg-secondary px-8 "
         }  transition-all duration-300 inline-block h-full py-[14px] text-2xl text-white rounded-full`}
       >
         Portfolio
@@ -32,7 +32,7 @@ const GroupButton = () => {
         onMouseEnter={hireBtnHover}
         onMouseLeave={hireBtnUnHover}
         href=""
-        className=" inline-block h-full py-[14px] pl-5 text-2xl text-white rounded-full hover:bg-yellow-600 hover:px-8 transition-all duration-300 mr-[30px] hover:mr-0"
+        className=" inline-block h-full py-[14px] pl-5 text-2xl text-white rounded-full hover:bg-secondary hover:px-8 transition-all duration-300 mr-[30px] hover:mr-0"
       >
         Hire me
         <Image
