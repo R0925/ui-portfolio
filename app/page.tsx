@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <main className="text-primary">
-      <section className="w-[1244px] m-auto  px-5">
+      <section className="xl:w-[1244px] m-auto  px-5">
         <Header />
 
         <section className=" mt-20">
@@ -59,11 +59,11 @@ export default function Home() {
                 height={30}
               />
             </div>
-            <h1 className="relative text-8xl font-semibold max-w-[800px] m-auto text-center text-black">
+            <h1 className="relative lg:text-8xl sm:text-7xl text-5xl transition-all font-semibold max-w-[800px] m-auto text-center text-black">
               I’m <span className="text-secondary">Jenny</span>,<br />
               Product Designer
               <Image
-                className="absolute bottom-[-60px] left-[-35px]"
+                className="absolute lg:bottom-[-60px] lg:left-[-35px] bottom-[-50px] left-[70px] lg:w-[80px] w-[60px] max-md:hidden"
                 src="/images/text-effect-2.png"
                 alt=""
                 width={80}
@@ -129,18 +129,18 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" relative bg-ellipse bg-no-repeat bg-center flex justify-center items-end h-[410px] -mt-2 ">
+          <div className=" relative bg-ellipse bg-no-repeat bg-center bg-contain flex justify-center items-end md:h-[410px] h-[300px] -mt-2 ">
             <Image
               onMouseEnter={womanHover}
               onMouseLeave={womanUnHover}
-              className=" absolute  bottom-0 z-10 peer"
+              className="absolute bottom-0 z-10 w-auto max-md:w-[300px] peer"
               src="/images/1x/Asset1.png"
               alt=""
               width={430}
               height={1000}
             />
             <Image
-              className=" absolute -top-[250px] ml-[-50px] bottom-0 z-0 transition-all duration-500 opacity-0 peer-hover:scale-125 peer-hover:opacity-100"
+              className=" absolute -top-[250px] ml-[-50px] bottom-0 z-0 transition-all duration-500 opacity-0 peer-hover:scale-125 peer-hover:opacity-100 "
               src="/images/happy-bg.svg"
               alt=""
               width={900}
@@ -151,7 +151,7 @@ export default function Home() {
         </section>
       </section>
 
-      <section className=" services relative h-[]  rounded-[50px] py-20 text-white">
+      {/* <section className=" services relative h-[]  rounded-[50px] py-20 text-white">
         <div className="w-[1244px] m-auto ">
           <div className="flex justify-between">
             <h1 className="text-6xl font-semibold z-10">
@@ -215,9 +215,9 @@ export default function Home() {
             ))}
           </Swiper>
         </div>
-      </section>
+      </section> */}
 
-      <section className="w-[1244px] m-auto pt-32">
+      {/* <section className="w-[1244px] m-auto pt-32">
         <h2 className="text-6xl font-bold text-center">
           My <span className="text-secondary">Work Experince</span>
         </h2>
@@ -265,9 +265,9 @@ export default function Home() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
-      <section className="bg-[#F2F4F7] py-36 rounded-[50px]">
+      {/* <section className="bg-[#F2F4F7] py-36 rounded-[50px]">
         <div className="flex justify-center gap-10 w-[1244px] m-auto">
           <div className="relative z-0">
             <Image
@@ -311,9 +311,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className=" portolio w-[1244px] m-auto py-20">
+      {/* <section className=" portolio w-[1244px] m-auto py-20">
         <div className="flex justify-between items-center">
           <h2 className="text-6xl font-bold">
             Lets have a look at <br /> my
@@ -345,9 +345,9 @@ export default function Home() {
             </SwiperSlide>
           ))}
         </Swiper>
-      </section>
+      </section> */}
 
-      <section className="relative">
+      {/* <section className="relative">
         <Image
           src="/images/bg.jfif"
           className="absolute top-0 left-0 right-0 bottom-0 w-full h-full rounded-[50px] -z-10"
@@ -430,7 +430,6 @@ export default function Home() {
                         />
                       );
                     })}
-                    {/* <span className="text-2xl ml-2">{testimonial.stars}</span> */}
                   </div>
                   <p className="mt-8">{testimonial.description}</p>
                 </div>
@@ -438,9 +437,9 @@ export default function Home() {
             ))}
           </Swiper>
         </div>
-      </section>
+      </section> */}
 
-      <section>
+      {/* <section>
         <h2 className="text-6xl font-bold text-center mt-[80px]">
           Have an Awsome Project <br /> Idea?{" "}
           <span className="text-secondary">Let’s Discuss</span>
@@ -536,9 +535,9 @@ export default function Home() {
             </ul>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="w-[1244px] m-auto mt-20 mb-10">
+      {/* <section className="w-[1244px] m-auto mt-20 mb-10">
         <div className="flex justify-between items-center">
           <h2 className="text-6xl font-bold">
             From my <br /> blog post
@@ -563,9 +562,9 @@ export default function Home() {
             />
           ))}
         </div>
-      </section>
+      </section> */}
 
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }

@@ -98,12 +98,23 @@
   width: 20px !important;
   height: 20px !important;
   opacity: 1 !important;
-  background: #E4E7EC !important;
+  background: #e4e7ec !important;
   transition: all 0.2s;
 }
 
-.portolio .swiper-pagination-bullet-active , .services .swiper-pagination-bullet-active {
-  background: #FD853A !important;
+.portolio .swiper-pagination-bullet-active,
+.services .swiper-pagination-bullet-active {
+  background: #fd853a !important;
   width: 60px !important;
   border-radius: 10px !important;
 }
+
+
+
+
+
+/* ONE */
+
+
+
+
